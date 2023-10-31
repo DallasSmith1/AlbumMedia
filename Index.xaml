@@ -1,0 +1,33 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AlbumMedia"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="AlbumMedia.Index"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Index"
+      Width="auto" Height="auto">
+
+    <Grid x:Name="grdMain">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="151*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="imgLoading" Grid.Column="1"  Grid.Row="1" gif:ImageBehavior.AnimatedSource="/images/loading.gif" MinWidth="134" MaxWidth="134" MinHeight="100.5" MaxHeight="100.5" Margin="171,191,175,55" Visibility="Hidden" Grid.RowSpan="2" />
+
+        <Image x:Name="imgLogo" HorizontalAlignment="Center" Height="109" Margin="0,39,0,0" VerticalAlignment="Top" Width="196" Source="/images/AMLogo.png" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="btnConnect" Style="{StaticResource Modern}"  Content="Connect" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="100"  Grid.Column="1" Grid.Row="1" Click="btnConnect_Click" Margin="0,171,0,0"/>
+        <Label x:Name="lblError" Style="{StaticResource MovieDescription}" Grid.Column="1" Content="" HorizontalAlignment="Center" Margin="0,218,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

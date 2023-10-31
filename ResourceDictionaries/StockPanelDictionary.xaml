@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="StackPanel" x:Key="NavTop">
+        <Style.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Margin" Value="0,20,0,0"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+    
+    
+    
+</ResourceDictionary>

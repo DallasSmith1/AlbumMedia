@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AlbumMedia.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SHAREDFOLDER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Desktop-tc4949r\e</Value>
+    </Setting>
+    <Setting Name="MOVIEFOLDER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Desktop-tc4949r\e\Users\Movie</Value>
+    </Setting>
+    <Setting Name="POSTERFOLDER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Desktop-tc4949r\e\Users\Movie\Photos</Value>
+    </Setting>
+    <Setting Name="ATLASCONNECTIONSTRING" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mongodb+srv://dallasagsmith:bOosWckeDjoGxxtf@homesevrer.tmigh2b.mongodb.net/test</Value>
+    </Setting>
+    <Setting Name="DATABASE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">HomeServer</Value>
+    </Setting>
+    <Setting Name="AZURE_API_KEY" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">700de9a2ae584e24a79d2050b541f34c</Value>
+    </Setting>
+    <Setting Name="AZURE_API_ENDPOINT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://albummediacomputervision.cognitiveservices.azure.com/</Value>
+    </Setting>
+    <Setting Name="TEMPORARYFOLDER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\FFMPEG\Temporary\</Value>
+    </Setting>
+    <Setting Name="EMAIL_CONNECTION_STRING" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">endpoint=https://album-media-communications.canada.communication.azure.com/;accesskey=uaDpV7ZFSAn3HFIwK5ngVwSaJG/9RKBaDY3ztJW3/GxBxluBDfMMWqXq2kfoRpxLO5MPepaUmDezBBGt+AbJjw==</Value>
+    </Setting>
+    <Setting Name="EMAIL_ADDRESS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DoNotReply@7b689d1e-a4c8-47a8-afc1-e068a6098582.azurecomm.net</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

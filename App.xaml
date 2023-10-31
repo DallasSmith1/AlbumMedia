@@ -1,0 +1,32 @@
+﻿<Application x:Class="AlbumMedia.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AlbumMedia"
+             xmlns:ffme="clr-namespace:Unosquare.FFME;assembly=ffme.win"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionaries/ButtonDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/LabelDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/TextBoxDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/ScrollBarDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/ScrollViewDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/StockPanelDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/ExpanderDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/ImageDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/DataGridDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/CheckBoxDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/SliderDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/TabItemDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/ComboBoxDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/MediaElementDictionary.xaml"/>
+                <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <!-- Theme setting -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

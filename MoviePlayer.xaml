@@ -1,0 +1,38 @@
+﻿<Page x:Name="MoviePlayer1" x:Class="AlbumMedia.MoviePlayer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:local="clr-namespace:AlbumMedia"
+      mc:Ignorable="d"
+      Title="MoviePlayer" MouseEnter="Hover" MouseLeave="Leave" Height="auto" Width="auto" MouseLeftButtonUp="MovieClick">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <MediaElement x:Name="mdeMoviePlayer" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" Width="auto" Grid.RowSpan="3" MediaOpened="Opened"/>
+        <Slider x:Name="sdrMovieProgess" Style="{StaticResource MahApps.Styles.Slider.Flat}" HorizontalAlignment="Center" Margin="0,0,0,40" VerticalAlignment="Bottom" Width="720" Cursor="Hand" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Foreground="#CCFF00DE" ValueChanged="MovieTimeChange" PreviewMouseDown="Mouse_Down" PreviewMouseUp="Mouse_Up" Focusable="False"/>
+        <Button x:Name="btnBack30" Style="{StaticResource VideoSkipLeft}" Content="Button" HorizontalAlignment="Center" Margin="0,0,100,5" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="3" Width="38" Height="37" Click="btnBack30_Click" Focusable="False"/>
+        <Button x:Name="btnForward30" Style="{StaticResource VideoSkipRight}" Content="Button" Grid.Row="3" HorizontalAlignment="Center" Margin="100,0,0,5" VerticalAlignment="Bottom" Grid.Column="1" Width="39" Height="37" Click="btnForward30_Click" Focusable="False"/>
+        <Button x:Name="btnPause" Style="{StaticResource VideoPause}" Content="Button" Grid.Row="3" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Bottom" Grid.Column="1" Height="29" Width="31" Click="btnPause_Click" Focusable="False"/>
+        <Button x:Name="btnClose" Style="{StaticResource Close}" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="31" Click="btnClose_Click" Focusable="False"/>
+        <Label x:Name="lblMovieTitle" Grid.Column="0" Style="{StaticResource MovieTitle}" Content="Label" HorizontalAlignment="Left" Margin="31,0,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="706"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblTotalTime" Grid.Column="3" Content="00:00:00" HorizontalAlignment="Left" Margin="0,0,0,35" VerticalAlignment="Bottom" Foreground="White" Grid.Row="2"/>
+            <Label x:Name="lblCurrentTime" Grid.Column="1" Content="00:00:00" HorizontalAlignment="Right" Margin="0,0,0,35" VerticalAlignment="Bottom" Foreground="White" Grid.Row="2"/>
+            <Button Style="{StaticResource VideoSound}" x:Name="btnSound" Grid.Column="2" Grid.Row="3" Content="Button" HorizontalAlignment="Left" Margin="0,0,0,4" VerticalAlignment="Bottom" Height="31" Width="28" Click="btnSound_Click" Focusable="False"/>
+            <Slider Style="{StaticResource MahApps.Styles.Slider.Flat}" x:Name="sdrVolume" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" Margin="42,0,0,11" VerticalAlignment="Bottom" Width="120" Foreground="#CCFF00DE" Value="50" ValueChanged="VolumeChange" Focusable="False"/>
+            <Button x:Name="btnFullscreen" Style="{StaticResource VideoFullScreen}" Grid.Column="2" Grid.Row="3" Content="Button" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Height="31" Width="30" Click="btnFullscreen_Click" Focusable="False"/>
+        </Grid>
+    </Grid>
+</Page>

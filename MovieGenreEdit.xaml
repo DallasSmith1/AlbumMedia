@@ -1,0 +1,15 @@
+﻿<Page x:Class="AlbumMedia.MovieGenreEdit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AlbumMedia"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MovieGenreEdit">
+
+    <Grid>
+        <DataGrid Style="{DynamicResource MovieList}" x:Name="dgrMovie" d:ItemsSource="{d:SampleData ItemCount=5}" Background="{x:Null}" VerticalAlignment="Top" IsReadOnly="True" Margin="0,53,0,0" SelectionChanged="GoToEditPage"/>
+        <Button Style="{StaticResource Modern}" x:Name="btnAddMovie" Content="Add Movie" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="130" Click="btnAddMovie_Click"/>
+    </Grid>
+</Page>
