@@ -15,4 +15,4 @@
 </table>
 <hr/>
 <h3>Summary</h3>
-<p>I enjoyed creating this app and gained new skills, including Computer Vision, working with APIs, and setting up automated no-reply emails. The project was a valuable introduction to desktop app development, revealing the limitations of WPF and sparking my curiosity to explore alternative frameworks. This led me to discover Tauri, which I adopted for developing a transit app after completing this project, which can be found here → https://github.com/DallasSmith1/My-Transit</p>
+<p>I enjoyed creating this app and gained new skills, including Computer Vision, working with APIs, and setting up automated no-reply emails. The project was a valuable introduction to desktop app development, revealing the limitations of WPF and sparking my curiosity to explore alternative frameworks. This led me to discover Tauri, which I adopted for developing a transit app after completing this project.
